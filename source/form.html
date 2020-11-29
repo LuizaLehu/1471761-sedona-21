@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-
 <body class="page">
   <header class="page-header">
     <a class="page-header__logo">
@@ -38,32 +36,28 @@
         </ul>
       </div>
     </nav>
-    <div class="page-header__wraper">
-      <img class="page-header__picture" src="https://via.placeholder.com/150x150" alt="">
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">
       Седона - отзывы о городе
     </h1>
+    <div class="introduction">
+      <img class="introduction__picture" src="https://via.placeholder.com/150x150" alt="">
+    </div>
     <section class="form">
-      <h2 class="form__title"> Оставьте свой отзыв</h2>
+      <h2 class="form__title">Оставьте свой отзыв</h2>
       <p class="form__introduction">Помогите нашим отелям стать лучше!
         Оставьте отзыв о них, а также о посещённых вами достопримечательностях
       </p>
       <form class="info" action="https://echo.htmlacademy.ru">
         <section class="info__base">
           <h3 class="info__base__title">Представьтесь:</h3>
-
-          <input type="text" placeholder="Петр"  id="client_name" name="person_name" required>
-          <label for="client_name"> Имя*:</label>
-
+          <input type="text" placeholder="Петр" id="client_name" name="person_name" required>
+          <label for="client_name">Имя*:</label>
           <input type="text" placeholder="Иванов" id="surname" name="person_surname" required>
           <label for="surname">фамилия*:</label>
-          
           <input type="text" placeholder="Александрович" id="fathername" name="person_fathername">
           <label for="fathername">отчество*:</label>
-         
         </section>
         <section class="info__contacts">
           <h3 class="info__contacts__title">Контактная информация:</h3>
@@ -78,28 +72,24 @@
           <h3 class="info__impression__title">Ваше Общее впечатление:</h3>
           <div class="info__impression__wrapper">
             <input type="radio" id="choice1" name="opinion" value="text" checked>
-            <label for="choice1"> Скорее положительное </label>
+            <label for="choice1">Скорее положительное</label>
             <input type="radio" id="choice2" name="opinion" value="text">
-            <label for="choice2"> Скорее отрицательное </label>
+            <label for="choice2">Скорее отрицательное</label>
             <input type="radio" id="choice3" name="opinion" value="text">
-            <label for="choice3"> Затрудняюсь ответить </label>
+            <label for="choice3">Затрудняюсь ответить</label>
           </div>
         </section>
         <section class="info__places">
-          <h3 class="info__places__title"> посещенные достопримечательности:</h3>
+          <h3 class="info__places__title">посещенные достопримечательности:</h3>
           <div class="info__places__wrapper">
             <input type="checkbox" id="attraction1" name="visited" value="text" checked>
-            <label for="attraction1"> Мост Дьявола </label>
-
+            <label for="attraction1">Мост Дьявола</label>
             <input type="checkbox" id="attraction2" name="visited" value="text" checked>
-            <label for="attraction2"> Гора-Колокол </label>
-
+            <label for="attraction2">Гора-Колокол</label>
             <input type="checkbox" id="attraction3" name="visited" value="text" checked>
-            <label for="attraction3"> Слайд-парк </label>
-
+            <label for="attraction3">Слайд-парк</label>
             <input type="checkbox" id="attraction4" name="visited" value="text">
-            <label for="attraction4"> Красные скалы </label>
-
+            <label for="attraction4">Красные скалы</label>
           </div>
         </section>
         <section class="info__emotions">
@@ -108,11 +98,9 @@
             Опишите подробно все свои восторги
           </textarea>
         </section>
-
-        <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+        <input type="submit" value="отправить отзыв">
       </form>
     </section>
-
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
@@ -145,7 +133,6 @@
           </a>
         </li>
       </ul>
-
       <div class="copyright">
         <span class="">Разработано</span>
         <img src="https://via.placeholder.com/150x150" alt="">
@@ -153,5 +140,4 @@
     </div>
   </footer>
 </body>
-
 </html>
