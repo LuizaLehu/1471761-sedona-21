@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.less">
 </head>
+
 <body class="page">
   <header class="page-header">
     <a class="page-header__logo">
@@ -50,8 +53,8 @@
         Оставьте отзыв о них, а также о посещённых вами достопримечательностях
       </p>
       <form class="info" action="https://echo.htmlacademy.ru">
-        <section class="info__base">
-          <h3 class="info__base__title">Представьтесь:</h3>
+        <section class="info-base">
+          <h3 class="info-base__title">Представьтесь:</h3>
           <input type="text" placeholder="Петр" id="client_name" name="person_name" required>
           <label for="client_name">Имя*:</label>
           <input type="text" placeholder="Иванов" id="surname" name="person_surname" required>
@@ -59,8 +62,8 @@
           <input type="text" placeholder="Александрович" id="fathername" name="person_fathername">
           <label for="fathername">отчество*:</label>
         </section>
-        <section class="info__contacts">
-          <h3 class="info__contacts__title">Контактная информация:</h3>
+        <section class="info-contacts">
+          <h3 class="info-contacts__title">Контактная информация:</h3>
           <label for="phone_number">Контактный телефон*:</label>
           <input type="tel" placeholder="Введите телефон" id="phone_number" name="person_number" required>
           <img src="https://via.placeholder.com/150x150" alt="">
@@ -68,9 +71,9 @@
           <input type="email" placeholder="Введите e-mail" id="email" name="person_email" required>
           <img src="https://via.placeholder.com/150x150" alt="">
         </section>
-        <section class="info__impression">
-          <h3 class="info__impression__title">Ваше Общее впечатление:</h3>
-          <div class="info__impression__wrapper">
+        <section class="info-impression">
+          <h3 class="info-impression__title">Ваше Общее впечатление:</h3>
+          <div class="info-impression__wrapper">
             <input type="radio" id="choice1" name="opinion" value="text" checked>
             <label for="choice1">Скорее положительное</label>
             <input type="radio" id="choice2" name="opinion" value="text">
@@ -79,9 +82,9 @@
             <label for="choice3">Затрудняюсь ответить</label>
           </div>
         </section>
-        <section class="info__places">
-          <h3 class="info__places__title">посещенные достопримечательности:</h3>
-          <div class="info__places__wrapper">
+        <section class="info-places">
+          <h3 class="info-places__title">посещенные достопримечательности:</h3>
+          <div class="info-places__wrapper">
             <input type="checkbox" id="attraction1" name="visited" value="text" checked>
             <label for="attraction1">Мост Дьявола</label>
             <input type="checkbox" id="attraction2" name="visited" value="text" checked>
@@ -92,8 +95,8 @@
             <label for="attraction4">Красные скалы</label>
           </div>
         </section>
-        <section class="info__emotions">
-          <h4 class="info__emotions__title">Опишите свои эмоции:</h4>
+        <section class="info-emotions">
+          <h4 class="info-emotions__title">Опишите свои эмоции:</h4>
           <textarea rows="4" name="write_something">
             Опишите подробно все свои восторги
           </textarea>
@@ -140,4 +143,5 @@
     </div>
   </footer>
 </body>
+
 </html>
