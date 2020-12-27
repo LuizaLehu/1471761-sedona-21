@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
@@ -43,10 +44,13 @@
     <h1 class="visually-hidden">
       Седона - отзывы о городе
     </h1>
+    <div class="intro">
+      <img class="intro__picture" src="https://via.placeholder.com/150x150" alt="">
+    </div>
     <section class="introduction">
       <h2 class="introduction_title">Фото и видео</h2>
-      <p class="introduction_text">
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
+      <p class="introduction_text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике
       </p>
     </section>
     <section class="reviews">
@@ -94,51 +98,41 @@
         </div>
       </blockquote>
     </section>
-      <section class="video">
-        <h4 class="video__title">Все еще сомневаетесь?</h4>
-        <p class="video__text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-        <a href="#">
-          <img class="video__item" src="https://via.placeholder.com/150x150" alt="">
-        </a>
-      </section>
-      <section class="range">
-        <h5 class="visually-hidden">video range</h5>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="range__video">
-            <legend class="range__video__legend"></legend>
-            <div class="range__video__wrapper">
-              <div class="range__video__controls">
-                <div class="range__video__scale">
-                  <div class="range__video__bar" style="
+    <section class="video">
+      <h4 class="video__title">Все еще сомневаетесь?</h4>
+      <p class="video__text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <a href="#">
+        <img class="video__item" src="https://via.placeholder.com/150x150" alt="">
+      </a>
+    </section>
+    <section class="range">
+      <h5 class="visually-hidden">video range</h5>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="range__video">
+          <legend class="range__video__legend"></legend>
+          <div class="range__video__wrapper">
+            <div class="range__video__controls">
+              <div class="range__video__scale">
+                <div class="range__video__bar" style="
                       width: 30%;
                       margin-left: 20%"></div>
-                </div>
-                <div class="toggle toggle-min" tabindex="0" style="
-                    left: 20%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="
-                    left: 50%"></div>
               </div>
-              <!--<div class="video-controls">
-                <label class="min-video video-label">
-                  <input type="number" name="min-video" value="0">
-                </label>
-                <label class="max-video video-label">
-                  <input type="number" name="max-video" value="20">
-                </label>
-              </div> -->
-              
+              <div class="toggle toggle-min" tabindex="0" style="
+                    left: 20%"></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%"></div>
             </div>
-          </fieldset>
-          <div class="button">
-            <button><img class="button__restart" src="https://via.placeholder.com/30x30" alt=""></button>
-            <button><img class="button__cc" src="https://via.placeholder.com/30x30" alt=""></button>
-            <button><img class="button__resize" src="https://via.placeholder.com/30x30" alt=""></button>
           </div>
-        </form>
-      </section>
-
+        </fieldset>
+        <div class="button">
+          <button><img class="button__restart" src="https://via.placeholder.com/30x30" alt=""></button>
+          <button><img class="button__cc" src="https://via.placeholder.com/30x30" alt=""></button>
+          <button><img class="button__resize" src="https://via.placeholder.com/30x30" alt=""></button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
@@ -178,4 +172,5 @@
     </div>
   </footer>
 </body>
+
 </html>
