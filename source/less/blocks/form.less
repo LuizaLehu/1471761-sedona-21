@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -13,7 +13,31 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form_field {
+  min-width: 230px;
+  min-height: 58px;
+  box-sizing: border-box;
+  border: none;
+  background-color: @grey;
+  color: @black;
+  padding: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: left;
+  .placeholder({
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: @black;
+  });
 }
