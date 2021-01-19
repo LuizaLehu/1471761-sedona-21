@@ -1,10 +1,3 @@
-.form {
-  .placeholder({
-    text-transform: uppercase;
-    color: red;
-  });
-}
-
 .form__title {
   font-size: 21px;
   font-style: normal;
@@ -25,11 +18,26 @@
   text-transform: uppercase;
 }
 
-input {
+.form_field {
+  min-width: 230px;
+  min-height: 58px;
+  box-sizing: border-box;
+  border: none;
   background-color: @grey;
+  color: @black;
+  padding: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: left;
+  .placeholder({
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: @black;
+  });
 }
-
-textarea.form_field.comment {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
