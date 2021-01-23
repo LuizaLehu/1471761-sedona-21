@@ -3,6 +3,15 @@
   background-color: @white;
 }
 
+.characteristics__list {
+  text-decoration: none;
+  
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .characteristics__item {
   font-size: 18px;
   font-style: normal;
@@ -11,6 +20,7 @@
   letter-spacing: 0;
   text-align: left;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .characteristics__description {
@@ -22,3 +32,11 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+
+//@media (min-width: @tablet-width) {
+ // .characteristics__list {
+ //   display: flex;
+ //   justify-content: space-between;
+ // }
+

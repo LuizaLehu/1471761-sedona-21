@@ -6,4 +6,36 @@
   background-color: transparent;
   color: @black;
   text-transform: uppercase;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

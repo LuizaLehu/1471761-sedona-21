@@ -5,17 +5,20 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/" width="102" height="84" alt="Sedona">
-    </a>
+  <header class="page-header container">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--logo">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Sedona">
+            </a>
+          </li>
           <li class="site-list__item site-list__item--active">
             <a class="site-list_name">
               Главная
@@ -41,49 +44,53 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">
-      Седона - небольшой город в Аризоне заслуживающий большего!
-    </h1>
-    <div class="intro">
-      <img class="intro__picture" src="https://via.placeholder.com/150x150" alt="">
-    </div>
-    <section class="advantages">
+    <section class="intro container">
+      <h1 class="page-main__title">
+        Седона - небольшой город в Аризоне заслуживающий большего!
+      </h1>
+    </section>
+    <section class="advantages container">
       <h2 class="visually-hidden">
         Приимушества
       </h2>
-      <p class="advantages__text">
+      <div class="advantages__text">
         Расмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
-      </p>
+      </div>
       <ul class="list">
         <li class="list-item first-items">
-          <h3 class="list-item__title">Настояший городок</h3>
-          <div class="list-item__wraper">
-            <p class="list-item__number">
-              №1
-            </p>
-            <p class="list-item__description">
-              Седона не атракцион для туристов, там течет своя жизнь
-            </p>
-            <img class="advantages_photo" src="https://via.placeholder.com/150x150" alt="">
+          <div class="list-item__container">
+            <div class="list-item__wraper">
+              <h3 class="list-item__title">Настояший городок</h3>
+              <p class="list-item__number">
+                №1
+              </p>
+              <p class="list-item__description">
+                Седона не атракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <div class="photo__wraper">
+              <img class="advantages_photo" src="img/photo-city_mobile.jpg" width="520px" ; height="260px"
+                alt="city_mobile">
+            </div>
           </div>
-          <div class="characteristics">
+          <div class="characteristics container">
             <ul class="characteristics__list">
-              <li class="characteristics__item">
+              <li class="characteristics__item vector__house">
                 жилье
-                <img class="characteristics__icon" src="https://via.placeholder.com/50x50" alt="">
+                <img class="characteristics__icon" src="img/icon-house.svg.svg" width="39px" height="37px" alt="">
                 <p class="characteristics__description">
                   рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="characteristics__item">
+              <li class="characteristics__item vector__present">
                 сувениры
-                <img class="characteristics__icon" src="https://via.placeholder.com/50x50" alt="">
+                <img class="characteristics__icon" src="img/icon-gift.svg.svg" width="32px" height="39px" alt="">
                 <p class="characteristics__description">
                   не только китайского, но и местного производства!
                 </p>
-              <li class="characteristics__item">
+              <li class="characteristics__item vector__food">
                 еда
-                <img class="characteristics__icon" src="https://via.placeholder.com/50x50" alt="">
+                <img class="characteristics__icon" src="img/icon-burger.svg.svg" width="40px" height="35px" alt="">
                 <p class="characteristics__description">
                   всегда заказывайте фирменый бургер, вы не разочаруйтесь!
                 </p>
@@ -92,52 +99,56 @@
           </div>
         </li>
         <li class="list-item first-items">
-          <h3 class="list-item__title">Там есть мост дьявола</h3>
-          <div class="list-item__wraper">
-            <p class="list-item__number">
-              №2
-            </p>
-            <p class="list-item__description">
-              Да, по нему можно пройти! Если вы осмеитесь, конечно
-            </p>
-            <img class="advantages_photo" src="https://via.placeholder.com/150x150" alt="">
+          <div class="list-item__container-second">
+            <div class="list-item__wraper-second">
+              <h3 class="list-item__title list-item__title-second">Там есть мост дьявола</h3>
+              <p class="list-item__number">
+                №2
+              </p>
+              <p class="list-item__description list-item__description-second">
+                Да, по нему можно пройти! Если вы осмеитесь, конечно
+              </p>
+            </div>
+            <div class="photo__wraper-second">
+              <img class="advantages_photo" src="img/photo-bridge_mobile.jpg" width="520px" height="260px" alt="">
+            </div>
           </div>
         </li>
-        <li class="list-item last-items">
+        <li class="list-item last-items container">
           <h3 class="list-item__title last-items__title"> небольшая площадь </h3>
           <div>
             <p class="list-item__number">
               №3
             </p>
-            <p class="list-item__description">
+            <p class="list-item__description last-items__description">
               Все интересные места находяться очень близко
             </p>
           </div>
         </li>
-        <li class="list-item last-items">
+        <li class="list-item last-items container">
           <h3 class="list-item__title last-items__title"> красивая дорога </h3>
           <div>
             <p class="list-item__number">
               №4
             </p>
-            <p class="list-item__description">
+            <p class="list-item__description last-items__description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
         </li>
-        <li class="list-item last-items">
+        <li class="list-item last-items container">
           <h3 class="list-item__title last-items__title"> мало туристов </h3>
           <div>
             <p class="list-item__number">№5
             </p>
-            <p class="list-item__description">
+            <p class="list-item__description last-items__description">
               Большинство едет в Гранд Каньон и толпиться там
             </p>
           </div>
         </li>
       </ul>
     </section>
-    <section class="contacts">
+    <section class="contacts container">
       <h3 class="visually-hidden">
         контактные данные
       </h3>
@@ -150,15 +161,12 @@
       <a class="button" href="#">
         найти гостиницу
       </a>
-      <div class="contacts__map">
-        <iframe>
-
-        </iframe>
-      </div>
-
     </section>
+    <div class="contacts__map">
+      <iframe>
+      </iframe>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <div class="footer__wrapper">
       <p class="footer__text">
         #visitsedona
@@ -169,7 +177,7 @@
             <span class="visually-hidden">
               твиттер
             </span>
-            <img src="https://via.placeholder.com/50x50" alt="">
+            <img src="img/icon-twitter.svg" width="18px" height="15px" alt="twiter" class="social__image-twitter">
           </a>
         </li>
         <li class="social__item">
@@ -177,7 +185,7 @@
             <span class="visually-hidden">
               facebook
             </span>
-            <img src="https://via.placeholder.com/50x50" alt="">
+            <img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook" class="social__image-facebook">
           </a>
         </li>
         <li class="social__item">
@@ -185,14 +193,14 @@
             <span class="visually-hidden">
               youtube
             </span>
-            <img src="https://via.placeholder.com/50x50" alt="">
+            <img src="img/icon-youtube.svg" width="20px" height="14px" alt="youtube" class="social__image-youtube">
           </a>
         </li>
       </ul>
       </section>
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
-        <img class="copyright__img" src="https://via.placeholder.com/50x50" alt="">
+        <img class="copyright__img" src="img/htmlacademy_footer.svg" width="27px" height="34px" alt="htmlacademy">
       </div>
     </div>
   </footer>

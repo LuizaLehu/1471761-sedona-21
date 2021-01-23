@@ -7,9 +7,27 @@
   text-align: center;
   color: @black;
   text-transform: uppercase;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 1070px;
+  }
 }
 
 .site-list_name {
   text-decoration: none;
   color: @black;
+}
+
+.site-list__item {
+  background-color: @light-blue;
 }
